@@ -4,7 +4,7 @@
 const key = "bde98a15d0c0cad60f48187337622740"
 
 function colocarDadosnsTela(dados){
-document.querySelector(".cidade").innerHTML = "Tempo em" + dados.name
+document.querySelector(".cidade").innerHTML = "Tempo em " + dados.name
 document.querySelector(".temperatura").innerHTML = Math.floor (dados.main.temp) + "°C" 
 document.querySelector(".texto-previsao").innerHTML = dados.weather[0].description
 document.querySelector(".umidade").innerHTML = dados.main.humidity + "%"
